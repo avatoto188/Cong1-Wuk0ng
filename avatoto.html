@@ -29,7 +29,7 @@
         <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-sea-captain-at-the-helm-png-image_10214775.png" type="image/x-icon">
-        <link rel="canonical" href="#">
+        <link rel="canonical" href="https://cong1-wuk0ng.pages.dev/avatoto">
         <style amp-boilerplate>
             body {
                 -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -98,6 +98,53 @@
             </style>
         </noscript>
         <style amp-custom>
+            .bg-animation {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                overflow: hidden;
+                z-index: -1;
+                background: linear-gradient(to bottom, #000428, #004e92);
+            }
+            
+            .buble {
+                position: relative;
+                display: flex;
+            }
+            
+            .buble span {
+                position: relative;
+                width: 30px;
+                height: 30px;
+                background: #000000;
+                margin: 0 4px;
+                border-radius: 50%;
+                box-shadow: 0 0 0 10px #4fc3dc44,
+                            0 0 50px #204e58,
+                            0 0 100px #076f86;
+                animation: animate 15s linear infinite;
+                animation-duration: calc(125s / var(--i));
+            }
+            
+            .buble span:nth-child(even) {
+                background: #ff2d75;
+                box-shadow: 0 0 0 10px #ff2d7544,
+                            0 0 50px #ff2d75,
+                            0 0 100px #ff2d75;
+            }
+            
+            @keyframes animate {
+                0% {
+                    transform: translateY(100vh) scale(0);
+                }
+                100% {
+                    transform: translateY(-10vh) scale(1);
+                }
+            }
+            </style>
+        <style amp-custom>
             * {
                 box-sizing: border-box;
                 margin: 0;
@@ -129,45 +176,6 @@
                 color: #fff;
                 font-family: 'Noto Sans', arial, sans-serif
             }
-
-            .bg-animation {
-                position: relative;
-                z-index: -999;
-            }
-
-            .buble {
-                position: relative;
-                display: flex;
-                justify-content: space-evenly;
-                z-index: -2;
-            }
-
-            .buble span {
-                width: 30px;
-                height: 30px;
-                background: #ffcc00;
-                padding: 15px;
-                border-radius: 50%;
-                box-shadow: 0 0 10px #4fc3dc22, 0 0 50px #e60000, 0 0 100px #e60000;
-                animation: bubleanim 15s linear infinite alternate;
-                animation-duration: calc(90s / var(--i));
-            }
-
-            .buble span:nth-child(even) {
-                background: #e60000;
-                box-shadow: 0 0 10px #e60000, 0 0 50px #e60000, 0 0 100px #e60000;
-            }
-
-            @keyframes bubleanim {
-                0% {
-                    transform: translateY(100vh) scale(0);
-                }
-
-                100% {
-                    transform: translateY(-10vh) scale(1);
-                }
-            }
-
             .animated {
                 -webkit-animation-duration: 1s;
                 animation-duration: 1s;
@@ -555,7 +563,7 @@
                 width: 13rem;
                 overflow: hidden;
                 height: 3rem;
-                background-size: 300% 300%;
+                background-size: 100% 300%;
                 backdrop-filter: blur(1rem);
                 border-radius: .38rem;
                 transition: .5s;
