@@ -4,7 +4,7 @@ $keyword = isset($_GET['search']) ? trim($_GET['search']) : '';
 
 // Define a list of acceptable keywords
 $list = [
-    "BONUS288 Promo",
+    "BONUS288",
     "BONUS288 Gratis",
     "BONUS288 Terbaru",
     "BONUS288 Menang",
