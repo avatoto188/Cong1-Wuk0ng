@@ -1,20 +1,52 @@
-<!DOCTYPE html>
+<?php
+// Retrieve the 'search' parameter from the query string
+$keyword = isset($_GET['search']) ? trim($_GET['search']) : '';
+
+// Define a list of acceptable keywords
+$list = [
+    "BONUS288 Promo",
+    "BONUS288 Gratis",
+    "BONUS288 Terbaru",
+    "BONUS288 Menang",
+    "BONUS288 Jackpot",
+    "BONUS288 Slot",
+    "BONUS288 Login",
+    "BONUS288 Daftar",
+    "BONUS288 Bonus",
+    "BONUS288 Game",
+    "BONUS288 Online",
+    "BONUS288 Cashback",
+    "BONUS288 Deposit",
+    "BONUS288 Withdraw",
+    "BONUS288 Referral",
+    "BONUS288 Hari Ini",
+    "BONUS288 Link Alternatif",
+    "BONUS288 Apk",
+    "BONUS288 Tips Menang",
+];
+
+// Check if the keyword is in the list (case insensitive)
+if (in_array(strtolower($keyword), array_map('strtolower', $list))) {
+    // Generate dynamic title and meta description
+    $pageTitle = "$keyword - Informasi Terbaru dan Promo Menarik di 288backend";
+    $metaDescription = "Temukan informasi terbaru tentang $keyword di 288backend. Dapatkan promo, tips, dan panduan lengkap untuk pengalaman terbaik.";
+
+    // Output the content with proper HTML structure
+    echo "<!DOCTYPE html>
 <html amp lang="en-ID">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>$keyword - Bandar Togel Online Terbaik dan Terpercaya 2025</title>
+    <title>$pageTitle - Bandar resmi Online Terbaik dan Terpercaya 2025</title>
     <meta name="description"
-        content="$keyword adalah bandar togel online terbaik dan terpercaya di tahun 2025. Nikmati berbagai pasaran togel internasional, bonus menarik, dan layanan pelanggan 24 jam!" />
+        content="$metaDescription" />
     <meta name="robots" content="index,follow" />
     <link href="https://images.pixieset.com/70097088/07edb9b2e34e4802dc2f7d377a9f5977-xxlarge.png" rel="shortcut icon"
         type="image/x-icon" />
     <link rel="canonical" href="#" />
-    <script type="text/javascript" src="https://288backend.com/bonus288.php?search=BONUS288%20Promo"></script>
-    <meta property="og:url" content="https://tortogel.guru/" />
-    <meta property="og:site_name" content="TOTO TORTOGEL" />
-    <meta property="og:image:alt" content="TOTO TORTOGEL" />
+    <meta property="og:site_name" content="$pageTitle" />
+    <meta property="og:image:alt" content="$pageTitle" />
     <meta property="og:image" content="https://images.pixieset.com/70097088/4cec7fdebbb808b685abf13c4584767a-xxlarge.jpg" />
    
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js" />
@@ -216,15 +248,17 @@
         <amp-img src="https://images.pixieset.com/70097088/4cec7fdebbb808b685abf13c4584767a-xxlarge.jpg" width="500"
             height="500" layout="intrinsic" class="banner"></amp-img>
 
-        <a href="https://tor4d.wiki/cs" target="_blank" rel="noreferrer noopener" role="button"
+        <a href="https://ava188.com/Login-Bonus288" target="_blank" rel="noreferrer noopener" role="button"
             class="btn-login">LOGIN</a>
-        <a href="https://tor4d.wiki/css" target="_blank" rel="noreferrer noopener" role="button"
+        <a href="https://ava188.com/Daftar-Bonus288" target="_blank" rel="noreferrer noopener" role="button"
             class="btn-daftar">DAFTAR</a>
 
-        <p class="copyright">© 2025 • <a style="color: #ffffff;" href="https://tortogel.guru/">SEO Wukong</a> •
+        <p class="copyright">© 2025 • <a href='".$_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']."'>".$_SERVER['REQUEST_URI']."</a> SEO Wukong</a> •
             All Rights Reserved.</p>
     </div>
 
 </body>
 
-</html>
+</html>";
+}
+?>
