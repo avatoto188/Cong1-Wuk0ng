@@ -10,7 +10,7 @@
     <meta name="robots" content="index,follow" />
     <link href="https://images.linkcdn.cloud/V2/395/favicon/favicon-451185846.webp" rel="shortcut icon"
         type="image/x-icon" />
-    <link rel="canonical" href="#" />
+    <link rel="canonical" href="https://288backend.com/" />
     <meta property="og:site_name" content="BONUS288 AGENT" />
     <meta property="og:image:alt" content="BONUS288 AGENT" />
     <meta property="og:image" content="https://images.pixieset.com/70097088/4cec7fdebbb808b685abf13c4584767a-xxlarge.jpg" />
