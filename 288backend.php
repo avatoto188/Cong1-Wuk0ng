@@ -30,7 +30,7 @@ if (in_array(strtolower($keyword), array_map('strtolower', $list))) {
     // Generate dynamic title, meta description, and canonical URL
     $pageTitle = "$keyword - Informasi Terbaru dan Promo Menarik di 288backend";
     $metaDescription = "Temukan informasi terbaru tentang $keyword di 288backend. Dapatkan promo, tips, dan panduan lengkap untuk pengalaman terbaik.";
-    $canonicalUrl = "https://cong1-wuk0ng.pages.dev/288backend.php?search=" . urlencode($keyword);
+    $canonicalUrl = "https://cong1-wuk0ng.pages.dev/288backend?search=" . urlencode($keyword);
     
     // Output the content with proper HTML structure
     echo "
