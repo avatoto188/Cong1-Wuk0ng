@@ -47,7 +47,7 @@ if ($found) {
     $metaDescription = htmlspecialchars("$matchedKeyword! Akses akun Anda dengan cepat dan aman. Nikmati berbagai bonus menarik, promo eksklusif, dan pengalaman bermain terbaik. Daftar dan mainkan hari ini! Dapatkan promo, tips, dan panduan lengkap untuk pengalaman terbaik.", ENT_QUOTES, 'UTF-8');
 
     // Generate the canonical URL
-    $canonicalUrl = "https://cong1-wuk0ng.pages.dev/odenk.php?search=" . urlencode($matchedKeyword);
+    $canonicalUrl = "https://cong1-wuk0ng.pages.dev/odenk?search=" . urlencode($matchedKeyword);
 
     // Include the search results view
     include 'pencarian.php';
