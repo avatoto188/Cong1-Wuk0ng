@@ -50,7 +50,7 @@ if ($found) {
     $canonicalUrl = "https://cong1-wuk0ng.pages.dev/pencarian.php?odenk.php?search=" . urlencode($matchedKeyword);
 
     // Include the search results view
-    include 'searchResults.php';
+    include 'pencarian.php';
 } else {
     // Redirect back to index with an error message
     header("Location: index.php?error=Keyword not found");
